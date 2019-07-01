@@ -125,3 +125,4 @@ dmypy.json
 
 # ignore downloaded data
 basics/data
+intermediate/data
