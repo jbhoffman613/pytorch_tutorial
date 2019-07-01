@@ -122,3 +122,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore downloaded data
+basics/data
+intermediate/data

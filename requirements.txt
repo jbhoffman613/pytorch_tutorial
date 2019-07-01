@@ -1,0 +1,6 @@
+# torch 
+# torchvison
+numpy
+matplotlib
+scikit-image
+pandas
