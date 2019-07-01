@@ -4,7 +4,7 @@ import numpy as np
 # D_in is the input dimension
 # H is the hidden dimension
 # D_out is output dimension
-N, D_in, H, D_out = 64, 1000, 100, 10
+N, D_in, H, D_out = 128, 1000, 100, 10
 
 # create random input and output data
 x = np.random.randn(N, D_in)
@@ -16,7 +16,7 @@ w2 = np.random.randn(H, D_out)
 
 # NN - two layer
 learning_rate = 1e-6
-for t in range(10000):
+for t in range(1000000):
     # Forward pass: compute predicted y
     h = x.dot(w1)
     h_relu = np.maximum(h, 0)
@@ -24,7 +24,7 @@ for t in range(10000):
 
     # Compute and print loss
     loss = np.square(y_pred - y).sum()
-    if t % 1000 == 0 or t == 9999:
+    if t % 100000 == 0 or t == 999999:
         print(t, loss)
 
     # Backprop to compute gradients of w1 and w2 with respect to loss
