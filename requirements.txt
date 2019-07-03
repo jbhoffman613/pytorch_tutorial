@@ -1,6 +1,7 @@
-# torch 
+# torch
 # torchvison
 numpy
 matplotlib
 scikit-image
 pandas
+pillow==5.4.1
